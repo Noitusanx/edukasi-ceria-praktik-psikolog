@@ -50,14 +50,7 @@ const Navbar = () => {
   const email = "ceriaedukasi@gmail.com";
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(email).then(
-      () => {
-        alert("Email copied to clipboard");
-      },
-      (err) => {
-        console.error("Failed to copy email to clipboard", err);
-      }
-    );
+    navigator.clipboard.writeText(email);
   };
 
   return (
@@ -272,7 +265,7 @@ const Navbar = () => {
                   type="button"
                   className="border-2 border-[#FFC36C] bg-white p-2 rounded-full"
                 >
-                  <a href="https://wa.me/6281281939361" target="_blank">
+                  <a href="https://wa.me/6289647052277" target="_blank">
                     <img src={whatsapp} alt="Whatsapp" className="w-6 h-6" />
                   </a>
                 </button>

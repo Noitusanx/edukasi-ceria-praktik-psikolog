@@ -23,7 +23,7 @@ const Profile = () => {
           className="font-extrabold sm:font-bold md:text-5xl text-3xl mb-4 text-center"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: headerInView ? 1 : 0, y: headerInView ? 0 : -50 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           PROFIL PSIKOLOG
         </motion.h1>
@@ -32,7 +32,7 @@ const Profile = () => {
           className="md:text-[18px] text-center sm:w-2/3 mx-auto mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: headerInView ? 1 : 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
         >
           Edukasi Ceria adalah praktik psikolog yang berdedikasi untuk
           memberikan pelayanan terbaik dalam bidang kesehatan mental dan
@@ -46,7 +46,7 @@ const Profile = () => {
           className="w-56 sm:w-64 h-[2px] bg-black mx-auto mb-10"
           initial={{ width: 0 }}
           animate={{ width: headerInView ? "100%" : 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.3, delay: 0.5 }}
         ></motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-3/4 mx-auto">
           <motion.div
@@ -57,7 +57,7 @@ const Profile = () => {
               opacity: sectionInView ? 1 : 0,
               scale: sectionInView ? 1 : 0.8,
             }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
           >
             <img
               src={profilepsikolog1}
@@ -73,7 +73,7 @@ const Profile = () => {
               opacity: sectionInView ? 1 : 0,
               scale: sectionInView ? 1 : 0.8,
             }}
-            transition={{ duration: 0.5, delay: 0.7 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
           >
             <img
               src={profilepsikolog2}
@@ -89,7 +89,7 @@ const Profile = () => {
               opacity: sectionInView ? 1 : 0,
               scale: sectionInView ? 1 : 0.8,
             }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 0.3, delay: 0.5 }}
           >
             <img
               src={profilepsikolog3}

@@ -28,16 +28,19 @@ const Describe = () => {
         <div className="flex flex-col sm:flex-row">
           <div className="sm:flex sm:flex-col sm:justify-center sm:items-start text-2xl ss:text-3xl lg:text-4xl font-bold mb-1 mt-3 sm:mt-0 sm:mb-0">
             <img src={infinite} alt="Infinite" />
-            <TypeAnimation
-              cursor={false}
-              className="mt-3"
-              sequence={["Dapatkan Dukungan", 1000]}
-            />
-            <TypeAnimation
-              cursor={false}
-              className="ml-0 xl:ml-12"
-              sequence={["Kesejahteraan Mental Anda", 2000]}
-            />
+            <p className="sm:mt-5 mt-4">
+              <TypeAnimation
+                cursor={false}
+                sequence={["Dapatkan Dukungan", 1000]}
+              />
+            </p>
+            <p>
+              <TypeAnimation
+                cursor={false}
+                className="ml-0 xl:ml-12"
+                sequence={["Kesejahteraan Mental Anda", 2000]}
+              />
+            </p>
           </div>
           <div className="sm:w-2/4 sm:ml-auto text-base md:text-lg mt-4 sm:mt-0">
             <p>

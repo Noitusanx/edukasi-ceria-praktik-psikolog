@@ -37,7 +37,7 @@ const CarouselImages = () => {
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
         >
           <Swiper
             modules={[Navigation, Pagination, EffectCoverflow]}
