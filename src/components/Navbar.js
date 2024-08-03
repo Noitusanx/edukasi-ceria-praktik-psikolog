@@ -62,9 +62,9 @@ const Navbar = () => {
 
   return (
     <nav className="font-roboto">
-      <div className="bg-primary py-10 sm:py-4 px-7 border-b-[1px] border-black">
-        <div className="hidden sm:flex justify-between items-center px-10 bg-white rounded-[30px] w-full md:w-11/12 mx-auto border-[1px] border-black">
-          <img src={logo} alt="Logo" className="w-28" />
+      <div className="bg-primary py-10 sm:pb-6 sm:pt-5 px-7 border-b-[1px] border-black">
+        <div className="hidden sm:flex justify-between items-center px-10 bg-white rounded-3xl w-full md:w-11/12 mx-auto border-[1px] border-black">
+          <img src={logo} alt="Logo" className=" w-24" />
           <div className="flex items-center space-x-5">
             <ul className="flex space-x-6 sm:text-base md:text-lg md:space-x-8 lg:space-x-14">
               <li>
