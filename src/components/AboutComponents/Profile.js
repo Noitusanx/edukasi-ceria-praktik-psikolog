@@ -10,11 +10,6 @@ const Profile = () => {
     triggerOnce: true,
     threshold: 0.1,
   });
-  const { ref: sectionRef, inView: sectionInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <div className="bg-orange py-14 border-black border-y-[1px]">
       <div className="w-3/4 mx-auto">
@@ -46,18 +41,17 @@ const Profile = () => {
           className="w-56 sm:w-64 h-[2px] bg-black mx-auto mb-10"
           initial={{ width: 0 }}
           animate={{ width: headerInView ? "100%" : 0 }}
-          transition={{ duration: 0.3, delay: 0.1 }}
+          transition={{ duration: 0.3, delay: 0.5 }}
         ></motion.div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-3/4 mx-auto">
           <motion.div
-            ref={sectionRef}
             className="flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{
-              opacity: sectionInView ? 1 : 0,
-              scale: sectionInView ? 1 : 0.8,
+              opacity: headerInView ? 1 : 0,
+              scale: headerInView ? 1 : 0.8,
             }}
-            transition={{ duration: 0.3, delay: 0.1 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
           >
             <img
               src={profilepsikolog1}
@@ -66,14 +60,13 @@ const Profile = () => {
             />
           </motion.div>
           <motion.div
-            ref={sectionRef}
             className="flex justify-center sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:row-end-2"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{
-              opacity: sectionInView ? 1 : 0,
-              scale: sectionInView ? 1 : 0.8,
+              opacity: headerInView ? 1 : 0,
+              scale: headerInView ? 1 : 0.8,
             }}
-            transition={{ duration: 0.3, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
           >
             <img
               src={profilepsikolog2}
@@ -82,14 +75,13 @@ const Profile = () => {
             />
           </motion.div>
           <motion.div
-            ref={sectionRef}
             className="flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{
-              opacity: sectionInView ? 1 : 0,
-              scale: sectionInView ? 1 : 0.8,
+              opacity: headerInView ? 1 : 0,
+              scale: headerInView ? 1 : 0.8,
             }}
-            transition={{ duration: 0.3, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <img
               src={profilepsikolog3}
