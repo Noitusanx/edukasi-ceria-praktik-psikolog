@@ -3,7 +3,7 @@ import React from "react";
 const BerkebutuhanKhusus = () => {
   return (
     <div className="xl:text-xl md:text-lg text-base leading-loose px-2 sm:px-0">
-      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold my-6">
+      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold sm:my-6 my-3">
         Pengenalan
       </h2>
       <p>
@@ -15,7 +15,7 @@ const BerkebutuhanKhusus = () => {
         anak-anak ini mengembangkan keterampilan yang diperlukan untuk mencapai
         potensi maksimal mereka.
       </p>
-      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold my-6">
+      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold sm:my-6 my-3">
         Autisme
       </h2>
       <p>
@@ -57,7 +57,7 @@ const BerkebutuhanKhusus = () => {
           </p>
         </li>
       </ol>
-      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold my-6">
+      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold sm:my-6 my-3">
         ADHD (Attention Deficit Hyperactivity Disorder)
       </h2>
       <p>
@@ -99,7 +99,7 @@ const BerkebutuhanKhusus = () => {
           </p>
         </li>
       </ol>
-      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold my-6">
+      <h2 className="xl:text-[2rem] lg:text-3xl text-2xl font-bold sm:my-6 my-3">
         Disleksia
       </h2>
       <p>

@@ -16,6 +16,7 @@ const MainEvent = () => {
 
   const event = null;
 
+  // if the event not null, uncomment this code
   // const event = {
   //   name: "Permainan Tradisional yang Sangat Panjang sekali ini adalah title yang sangat panjang",
   //   place: "Praktik Psikolog Edukasi Ceria",
@@ -27,7 +28,6 @@ const MainEvent = () => {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  // Variants for animations
   const variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },

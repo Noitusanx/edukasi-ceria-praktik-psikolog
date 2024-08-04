@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import articles from "../../data/Articles";
 import arrowback from "../../images/back.png";
 import { useLink } from "../LinkContext";
@@ -79,26 +80,39 @@ const CardArticle = () => {
         <div className="bg-[#A7E7D7] mt-8 px-6 sm:px-10 border-[1px] border-black rounded-lg">
           <h1 className="text-2xl sm:text-3xl font-bold my-5">Baca Juga</h1>
           <div className="grid grid-cols-1 ss:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
-            {randomArticles.map((article, index) => (
-              <Link key={index} to={`/artikel/${article.slug}`}>
-                <div className="px-2">
-                  <div className="bg-[#B9ECFC] p-5 rounded-[10px] border-[1px] border-black hover:opacity-65 h-full">
-                    <div>
-                      <img
-                        src={article.image}
-                        alt="Card Image"
-                        className="w-full h-40 object-cover rounded-[10px]"
-                      />
-                    </div>
-                    <div className="mt-5">
-                      <h1 className="text-xl font-bold">{article.title}</h1>
-                      <p className="line-clamp-3">{article.text}</p>
-                      <p className="text-[#6e6e6e] mt-4">{article.date}</p>
-                    </div>
+            {randomArticles.map((article, index) => {
+              const { ref, inView } = useInView({
+                threshold: 0.1,
+                triggerOnce: true,
+              });
+
+              return (
+                <Link key={index} to={`/artikel/${article.slug}`}>
+                  <div className="px-2">
+                    <motion.div
+                      ref={ref}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+                      transition={{ duration: 0.3 }}
+                      className="bg-[#B9ECFC] p-5 rounded-[10px] border-[1px] border-black h-full transition-transform duration-300 ease-in-out "
+                    >
+                      <div>
+                        <img
+                          src={article.image}
+                          alt="Card Image"
+                          className="w-full h-40 object-cover rounded-[10px]"
+                        />
+                      </div>
+                      <div className="mt-5">
+                        <h1 className="text-xl font-bold">{article.title}</h1>
+                        <p className="line-clamp-3">{article.text}</p>
+                        <p className="text-[#6e6e6e] mt-4">{article.date}</p>
+                      </div>
+                    </motion.div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -227,3 +227,21 @@ input:-webkit-autofill {
 .custom-swiper-pagination .swiper-pagination-bullet-active {
   background: #fff;
 }
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
+
+.swiper-button-next {
+  right: 10px; 
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+

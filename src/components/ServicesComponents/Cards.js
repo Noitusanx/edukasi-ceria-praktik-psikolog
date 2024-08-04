@@ -15,8 +15,8 @@ const Cards = () => {
   };
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Animasi hanya muncul sekali
-    threshold: 0.1, // Animasi muncul saat 20% komponen terlihat
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   const sectionVariants = {

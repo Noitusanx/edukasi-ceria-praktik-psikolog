@@ -12,7 +12,7 @@ import instagram from "../../images/instagram.svg";
 const Contact = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1, // Trigger when 10% of the component is visible
+    threshold: 0.1,
   });
 
   return (

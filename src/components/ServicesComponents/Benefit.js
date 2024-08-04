@@ -10,7 +10,6 @@ const Benefit = () => {
   const controls = useAnimation();
   const [ref, setRef] = useState(null);
 
-  // Intersection Observer callback
   const onScreen = (entries) => {
     const [entry] = entries;
     if (entry.isIntersecting) {
