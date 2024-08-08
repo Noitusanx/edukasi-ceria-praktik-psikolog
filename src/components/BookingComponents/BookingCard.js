@@ -92,7 +92,7 @@ const Cards = () => {
                   placeholder=" "
                   required
                 >
-                  <option value="" disabled selected>
+                  <option disabled defaultValue="Pilih Tipe Layanan">
                     Pilih Tipe Layanan
                   </option>
                   <option value="konsultasi">Konsultasi</option>

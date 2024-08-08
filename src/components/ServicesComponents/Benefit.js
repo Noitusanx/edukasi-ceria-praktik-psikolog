@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Services from "../../data/Services";
 import { useParams } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";

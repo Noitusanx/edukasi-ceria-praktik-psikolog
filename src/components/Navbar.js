@@ -21,8 +21,7 @@ const Navbar = () => {
     } else {
       setActiveLink(location.pathname);
     }
-    console.log(location.pathname);
-  }, [location.pathname, setActiveLink]);
+  }, [activeLink, location.pathname, setActiveLink]);
 
   const handleToggle = () => {
     if (toggle) {
