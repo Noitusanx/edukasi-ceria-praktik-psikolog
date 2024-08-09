@@ -61,6 +61,7 @@ const Contact = () => {
                     href="https://www.google.com/maps/place/Praktik+Psikolog+Edukasi+Ceria/@4.159922,96.1282997,15z/data=!4m6!3m5!1s0x303ec359c2959e4f:0x3b06118f4fed4810!8m2!3d4.159922!4d96.1282997!16s%2Fg%2F11kq7t8gw6?entry=ttu"
                     target="_blank"
                     className="flex hover:opacity-70"
+                    rel="noreferrer"
                   >
                     <img
                       src={address}
@@ -79,6 +80,7 @@ const Contact = () => {
                   href="https://wa.me/6289647052277"
                   target="_blank"
                   className="hover:opacity-60"
+                  rel="noreferrer"
                 >
                   <img
                     src={whatsapp}
@@ -90,6 +92,7 @@ const Contact = () => {
                   href="https://www.instagram.com/edukasiceria8"
                   target="_blank"
                   className="hover:opacity-60"
+                  rel="noreferrer"
                 >
                   <img src={instagram} alt="Instagram Icon" className="w-5" />
                 </a>
@@ -104,6 +107,7 @@ const Contact = () => {
               <a
                 href="https://www.google.com/maps/place/Praktik+Psikolog+Edukasi+Ceria/@4.159922,96.1282997,15z/data=!4m6!3m5!1s0x303ec359c2959e4f:0x3b06118f4fed4810!8m2!3d4.159922!4d96.1282997!16s%2Fg%2F11kq7t8gw6?entry=ttus"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src={map}

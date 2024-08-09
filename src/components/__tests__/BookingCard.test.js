@@ -17,7 +17,7 @@ global.IntersectionObserver = class {
 };
 
 describe("Cards Component", () => {
-  it("renders booking form", () => {
+  it("merender form pemesanan", () => {
     render(<BookingCard />);
 
     expect(screen.getByText(/Pesan Layanan/i)).toBeInTheDocument();
@@ -29,7 +29,7 @@ describe("Cards Component", () => {
     expect(screen.getByRole("button", { name: /Pesan/i })).toBeInTheDocument();
   });
 
-  it("submits the form with correct data", () => {
+  it("submit form dengan data yang sesuai", () => {
     render(<BookingCard />);
 
     const fullnameInput = screen.getByLabelText(/Nama Lengkap/i);
@@ -59,6 +59,11 @@ describe("Cards Component", () => {
     expect(url).toContain("konsultasi");
     expect(url).toContain("Stres%20kerja");
     expect(url).toContain("Tidak%20ada");
-    expect(global.open).toHaveBeenCalledWith(expect.any(String), "_blank");
+
+    expect(global.open).toHaveBeenCalledWith(
+      expect.any(String),
+      "_blank",
+      "noopener,noreferrer"
+    );
   });
 });

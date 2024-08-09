@@ -264,7 +264,11 @@ const Navbar = () => {
                   type="button"
                   className="border-2 border-[#FFC36C] bg-white p-2 rounded-full"
                 >
-                  <a href="https://wa.me/6289647052277" target="_blank">
+                  <a
+                    href="https://wa.me/6289647052277"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img src={whatsapp} alt="Whatsapp" className="w-6 h-6" />
                   </a>
                 </button>
@@ -275,6 +279,7 @@ const Navbar = () => {
                   <a
                     href="https://www.instagram.com/edukasiceria8"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img src={instagram} alt="Instagram" className="w-6 h-6 " />
                   </a>

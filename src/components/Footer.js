@@ -93,10 +93,18 @@ const Footer = () => {
       </div>
       <div className="flex justify-between items-center w-4/5 mx-auto mt-5">
         <div className="flex gap-x-4 mx-auto sm:mx-0">
-          <a href="https://wa.me/6289647052277" target="_blank">
+          <a
+            href="https://wa.me/6289647052277"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={whatsapp} alt="Whatsapp" className="w-6" />
           </a>
-          <a href="https://www.instagram.com/edukasiceria8" target="_blank">
+          <a
+            href="https://www.instagram.com/edukasiceria8"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={instagram} alt="Instagram" className="w-6" />
           </a>
         </div>

@@ -22,7 +22,8 @@ const Cards = () => {
     const whatsappURL = `https://wa.me/6289647052277?text=${encodeURIComponent(
       message
     )}`;
-    window.open(whatsappURL, "_blank");
+
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
   };
 
   const variants = {
@@ -89,10 +90,10 @@ const Cards = () => {
                   name="service"
                   id="service"
                   className="block pt-4 pb-1 px-0 w-full text-sm md:text-lg sm:text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:ring-0 focus:border-[#0F83A8] peer"
-                  placeholder=" "
+                  defaultValue="Pilih Tipe Layanan"
                   required
                 >
-                  <option disabled defaultValue="Pilih Tipe Layanan">
+                  <option value="Pilih Tipe Layanan" disabled>
                     Pilih Tipe Layanan
                   </option>
                   <option value="konsultasi">Konsultasi</option>
