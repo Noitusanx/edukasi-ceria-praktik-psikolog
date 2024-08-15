@@ -76,7 +76,7 @@ const Cards = () => {
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n")}\n\nTerima kasih!`;
 
-    const whatsappURL = `https://wa.me/6281265375989?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/6289647052277?text=${encodeURIComponent(
       message
     )}`;
 
