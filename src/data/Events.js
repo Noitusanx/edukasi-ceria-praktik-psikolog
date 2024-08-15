@@ -1,8 +1,8 @@
-import eventimage1 from "../images/event1.png";
-import eventimage2 from "../images/event_image2.png";
-import eventimage3 from "../images/event_image3.png";
-import eventimage4 from "../images/event_image_4.jpg";
-import eventimage5 from "../images/event_image5.jpg";
+import eventimage1 from "../images/event1.webp";
+import eventimage2 from "../images/event_image2.webp";
+import eventimage3 from "../images/event_image3.webp";
+import eventimage4 from "../images/event_image_4.webp";
+import eventimage5 from "../images/event_image5.webp";
 
 const Events = [
   {

@@ -1,22 +1,34 @@
-import React from "react";
-import AboutPraktik from "../components/AboutComponents/AboutPraktik";
-import Profile from "../components/AboutComponents/Profile";
-import Contact from "../components/AboutComponents/Contact";
+import React, { Suspense, lazy } from "react";
+import AboutPraktikSkeleton from "../components/Skeletons/AboutPraktikSkeleton";
+import ProfileSkeleton from "../components/Skeletons/ProfileSkeleton";
+import ContactSkeleton from "../components/Skeletons/ContactSkeleton";
 
-const about = () => {
+const AboutPraktik = lazy(() =>
+  import("../components/AboutComponents/AboutPraktik")
+);
+const Profile = lazy(() => import("../components/AboutComponents/Profile"));
+const Contact = lazy(() => import("../components/AboutComponents/Contact"));
+
+const About = () => {
   return (
     <div className="font-roboto">
-      <section>
-        <AboutPraktik />
-      </section>
-      <section>
-        <Profile />
-      </section>
-      <section>
-        <Contact />
-      </section>
+      <Suspense fallback={<AboutPraktikSkeleton />}>
+        <section>
+          <AboutPraktik />
+        </section>
+      </Suspense>
+      <Suspense fallback={<ProfileSkeleton />}>
+        <section>
+          <Profile />
+        </section>
+      </Suspense>
+      <Suspense fallback={<ContactSkeleton />}>
+        <section>
+          <Contact />
+        </section>
+      </Suspense>
     </div>
   );
 };
 
-export default about;
+export default About;

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Logo from "../images/logo.png";
-import arrow from "../images/arrow.png";
+import Logo from "../images/logo.webp";
+import arrow from "../images/arrow.webp";
 import whatsapp from "../images/whatsapp.svg";
 import instagram from "../images/instagram.svg";
 import { Link } from "react-router-dom";

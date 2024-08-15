@@ -1,5 +1,4 @@
 import React from "react";
-import artikelImage from "../../../images/artikel_image.jpg";
 
 const MinatBakat = () => {
   return (

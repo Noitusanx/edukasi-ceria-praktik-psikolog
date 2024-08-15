@@ -4,14 +4,14 @@ import ManfaatScreening from "../components/ArticlesComponents/Articles/ManfaatS
 import MasalahAkademik from "../components/ArticlesComponents/Articles/MasalahAkademik";
 import MinatBakat from "../components/ArticlesComponents/Articles/MinatBakat";
 import TesKecerdasan from "../components/ArticlesComponents/Articles/TesKecerdasan";
-import artikelImage from "../images/artikel_image.jpg";
-import minatBakatImage from "../images/minatbakat.jpg";
-import deteksiMasalahAkademikImage from "../images/deteksiakademik.jpg";
-import tumbuhKembangImage from "../images/tumbuhkembangs.jpg";
-import tesKecerdasanImage from "../images/kecerdasans.jpg";
-import konsultasiImage from "../images/konsultasi.jpg";
-import articleTsunami from "../images/articles_tsunami.jpeg";
 import EventSiapaTsunami from "../components/ArticlesComponents/Articles/EventSiapaTsunami";
+import artikelImage from "../images/artikel_image.webp";
+import minatBakatImage from "../images/minatbakat.webp";
+import deteksiMasalahAkademikImage from "../images/deteksiakademik.webp";
+import tumbuhKembangImage from "../images/tumbuhkembangs.webp";
+import tesKecerdasanImage from "../images/kecerdasans.webp";
+import konsultasiImage from "../images/konsultasi.webp";
+import articleTsunami from "../images/articles_tsunami.webp";
 
 const Articles = [
   {

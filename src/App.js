@@ -11,22 +11,48 @@ import Booking from "./pages/Booking";
 import Service from "./pages/Service";
 import Events from "./pages/Events";
 import Loading from "./components/Loading";
+import NotFound from "./pages/NotFound";
 
 const Main = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState("");
+  const [isNotFound, setIsNotFound] = useState(false);
   const location = useLocation();
 
+  const validRoutes = [
+    "/",
+    "/tentang",
+    "/layanan",
+    "/artikel",
+    "/artikel/:slug",
+    "/pesan",
+    "/layanan/:slug",
+    "/acara",
+  ];
+
   useEffect(() => {
-    const handleLoad = () => {
+    const path = location.pathname;
+
+    const isValidRoute = validRoutes.some((route) => {
+      const regex = new RegExp(
+        `^${route.replace(/:[^\s/]+/g, "([^/]+)")}$`,
+        "i"
+      );
+      return regex.test(path);
+    });
+
+    if (!isValidRoute) {
+      setIsNotFound(true);
+      setIsLoading(true);
       setTimeout(() => {
         setIsLoading(false);
       }, 1000);
-    };
+      return;
+    }
 
+    setIsNotFound(false);
     setIsLoading(true);
 
-    const path = location.pathname;
     const pageName =
       path
         .split("/")
@@ -44,6 +70,12 @@ const Main = () => {
       setIsLoading(false);
       return;
     }
+
+    const handleLoad = () => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+    };
 
     const images = document.querySelectorAll("img");
     let loadedImagesCount = 0;
@@ -73,8 +105,9 @@ const Main = () => {
   }, [location]);
 
   if (isLoading) {
-    return <Loading page={currentPage} />;
+    return <Loading page={isNotFound ? "Not Found" : currentPage} />;
   }
+
   return (
     <div>
       <Navbar />
@@ -87,6 +120,7 @@ const Main = () => {
         <Route path="/pesan" element={<Booking />} />
         <Route path="/layanan/:slug" element={<Service />} />
         <Route path="/acara" element={<Events />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

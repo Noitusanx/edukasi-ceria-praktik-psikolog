@@ -5,9 +5,10 @@ import call from "../../images/call.svg";
 import email from "../../images/email.svg";
 import address from "../../images/address.svg";
 import calendar from "../../images/calendar.svg";
-import map from "../../images/map.png";
+import map from "../../images/map.webp";
 import whatsapp from "../../images/whatsapp.svg";
 import instagram from "../../images/instagram.svg";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const { ref, inView } = useInView({
@@ -16,110 +17,137 @@ const Contact = () => {
   });
 
   return (
-    <div>
-      <section className="bg-darkgreen py-16">
-        <div className="w-11/12 md:w-4/5 mx-auto bg-[#8CEDC3] rounded-[30px] p-6 sm:p-12 shadow-custom">
-          <motion.h1
-            className="text-center text-3xl md:text-4xl font-bold mb-5"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50 }}
-            transition={{ duration: 0.5 }}
-            ref={ref}
-          >
-            Informasi Kontak
-          </motion.h1>
-          <div className="flex flex-col sm:flex-row justify-center">
-            <motion.div
-              className="flex flex-col justify-between p-6 bg-[#B2E0B4] rounded-xl border border-black mb-6 sm:mb-0 sm:mr-4 sm:w-3/4 text-sm md:text-base"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+    <>
+      <Helmet>
+        <title>
+          Kontak Praktik Psikolog - Edukasi Ceria, Meulaboh Aceh Barat
+        </title>
+        <meta
+          name="description"
+          content="Hubungi Edukasi Ceria melalui telepon, email, atau kunjungi praktik kami di Meulaboh Aceh Barat. Kami siap membantu mengatasi berbagai permasalahan psikologis Anda."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ContactPoint",
+              telephone: "+62 896 4705 2277",
+              contactType: "General Inquiry",
+              email: "ceriaedukasi@gmail.com",
+              availableLanguage: "Indonesian",
+              areaServed: "ID",
+              url: "https://edukasi-ceria.com/",
+            }),
+          }}
+        />
+      </Helmet>
+
+      <div>
+        <section className="bg-darkgreen py-16">
+          <div className="w-11/12 md:w-4/5 mx-auto bg-[#8CEDC3] rounded-[30px] p-6 sm:p-12 shadow-custom">
+            <motion.h1
+              className="text-center text-3xl md:text-4xl font-bold mb-5"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50 }}
+              transition={{ duration: 0.5 }}
+              ref={ref}
             >
-              <div className=" font-medium ">
-                <div className="flex items-center my-3">
-                  <img src={call} alt="Phone Icon" className="mr-2 w-6" />
-                  <p>+62 896 4705 2277</p>
-                </div>
-                <div className="flex items-center my-3">
-                  <img src={email} alt="Email Icon" className="mr-2 w-6" />
-                  <p>ceriaedukasi@gmail.com</p>
-                </div>
-                <div className="flex items-start my-3">
-                  <img
-                    src={calendar}
-                    alt="Calendar Icon"
-                    className="mr-3 w-5"
-                  />
-                  <div>
-                    <p>Buka:</p>
-                    <p>08:30 - 16:00 WIB (Senin - Jumat)</p>
-                    <p>09:00 - 14:00 WIB (Sabtu)</p>
+              Informasi Kontak
+            </motion.h1>
+            <div className="flex flex-col sm:flex-row justify-center">
+              <motion.div
+                className="flex flex-col justify-between p-6 bg-[#B2E0B4] rounded-xl border border-black mb-6 sm:mb-0 sm:mr-4 sm:w-3/4 text-sm md:text-base"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <div className=" font-medium ">
+                  <div className="flex items-center my-3">
+                    <img src={call} alt="Phone Icon" className="mr-2 w-6" />
+                    <p>+62 896 4705 2277</p>
+                  </div>
+                  <div className="flex items-center my-3">
+                    <img src={email} alt="Email Icon" className="mr-2 w-6" />
+                    <p>ceriaedukasi@gmail.com</p>
+                  </div>
+                  <div className="flex items-start my-3">
+                    <img
+                      src={calendar}
+                      alt="Calendar Icon"
+                      className="mr-3 w-5"
+                    />
+                    <div>
+                      <p>Buka:</p>
+                      <p>08:30 - 16:00 WIB (Senin - Jumat)</p>
+                      <p>09:00 - 14:00 WIB (Sabtu)</p>
+                    </div>
+                  </div>
+                  <div className="items-center my-2">
+                    <a
+                      href="https://www.google.com/maps/place/Praktik+Psikolog+Edukasi+Ceria/@4.159922,96.1282997,15z/data=!4m6!3m5!1s0x303ec359c2959e4f:0x3b06118f4fed4810!8m2!3d4.159922!4d96.1282997!16s%2Fg%2F11kq7t8gw6?entry=ttu"
+                      target="_blank"
+                      className="flex hover:opacity-70"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={address}
+                        alt="Address Icon"
+                        className="mr-3 w-5"
+                      />
+                      <p>
+                        Jl. Purnama Lr. T. Cut Ali No.288, Drien Rampak, Kec.
+                        Johan Pahlawan, Kabupaten Aceh Barat, Aceh 23617
+                      </p>
+                    </a>
                   </div>
                 </div>
-                <div className="items-center my-2">
+                <div className="flex justify-center mt-4">
                   <a
-                    href="https://www.google.com/maps/place/Praktik+Psikolog+Edukasi+Ceria/@4.159922,96.1282997,15z/data=!4m6!3m5!1s0x303ec359c2959e4f:0x3b06118f4fed4810!8m2!3d4.159922!4d96.1282997!16s%2Fg%2F11kq7t8gw6?entry=ttu"
+                    href="https://wa.me/6289647052277"
                     target="_blank"
-                    className="flex hover:opacity-70"
+                    className="hover:opacity-60"
                     rel="noreferrer"
                   >
                     <img
-                      src={address}
-                      alt="Address Icon"
+                      src={whatsapp}
+                      alt="Whatsapp Icon"
                       className="mr-3 w-5"
                     />
-                    <p>
-                      Jl. Purnama Lr. T. Cut Ali No.288, Drien Rampak, Kec.
-                      Johan Pahlawan, Kabupaten Aceh Barat, Aceh 23617
-                    </p>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/edukasiceria8"
+                    target="_blank"
+                    className="hover:opacity-60"
+                    rel="noreferrer"
+                  >
+                    <img src={instagram} alt="Instagram Icon" className="w-5" />
                   </a>
                 </div>
-              </div>
-              <div className="flex justify-center mt-4">
+              </motion.div>
+              <motion.div
+                className="w-full sm:my-auto hover:opacity-70"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
                 <a
-                  href="https://wa.me/6289647052277"
+                  href="https://www.google.com/maps/place/Praktik+Psikolog+Edukasi+Ceria/@4.159922,96.1282997,15z/data=!4m6!3m5!1s0x303ec359c2959e4f:0x3b06118f4fed4810!8m2!3d4.159922!4d96.1282997!16s%2Fg%2F11kq7t8gw6?entry=ttus"
                   target="_blank"
-                  className="hover:opacity-60"
                   rel="noreferrer"
                 >
                   <img
-                    src={whatsapp}
-                    alt="Whatsapp Icon"
-                    className="mr-3 w-5"
+                    src={map}
+                    alt="Map Praktik Psikolog Edukasi Ceria"
+                    className="w-full border border-black rounded-xl"
                   />
                 </a>
-                <a
-                  href="https://www.instagram.com/edukasiceria8"
-                  target="_blank"
-                  className="hover:opacity-60"
-                  rel="noreferrer"
-                >
-                  <img src={instagram} alt="Instagram Icon" className="w-5" />
-                </a>
-              </div>
-            </motion.div>
-            <motion.div
-              className="w-full sm:my-auto hover:opacity-70"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <a
-                href="https://www.google.com/maps/place/Praktik+Psikolog+Edukasi+Ceria/@4.159922,96.1282997,15z/data=!4m6!3m5!1s0x303ec359c2959e4f:0x3b06118f4fed4810!8m2!3d4.159922!4d96.1282997!16s%2Fg%2F11kq7t8gw6?entry=ttus"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={map}
-                  alt="Map Praktik Psikolog Edukasi Ceria"
-                  className="w-full border border-black rounded-xl"
-                />
-              </a>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 

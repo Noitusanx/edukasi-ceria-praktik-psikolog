@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../images/logo.png";
+import logo from "../images/logo.webp";
 import whatsapp from "../images/whatsapp.svg";
 import instagram from "../images/instagram.svg";
 import { Link, useLocation } from "react-router-dom";
@@ -54,8 +54,8 @@ const Navbar = () => {
 
   return (
     <nav className="font-roboto">
-      <div className="bg-primary py-10 sm:pb-6 sm:pt-5 px-7 border-b-[1px] border-black">
-        <div className="hidden sm:flex justify-between items-center px-10 bg-white rounded-3xl w-full md:w-11/12 mx-auto border-[1px] border-black">
+      <div className="bg-primary px-7 border-b-[1px] border-black">
+        <div className="hidden sm:flex justify-between items-center px-10 rounded-3xl w-full md:w-11/12 mx-auto ">
           <img src={logo} alt="Logo" className=" w-24" />
           <div className="flex items-center space-x-5">
             <ul className="flex space-x-6 sm:text-base md:text-lg md:space-x-8 lg:space-x-14">
