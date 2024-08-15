@@ -54,12 +54,11 @@ const BookLanding = () => {
           >
             <h1 className="font-bold text-3xl md:text-4xl">Pesan</h1>
             <p className="sm:mt-3 mt-1 lg:text-lg xs:text-base text-sm">
-              Apakah Anda membutuhkan bantuan psikologis atau ingin
-              berkonsultasi mengenai kesehatan mental Anda? Jangan ragu untuk
-              memesan sesi konsultasi dengan psikolog kami. Kami siap membantu
-              Anda mengatasi berbagai masalah emosional dan memberikan dukungan
-              yang Anda butuhkan. Pesan sesi konsultasi sekarang dan ambil
-              langkah awal menuju kesehatan mental yang lebih baik.
+              Kami menyediakan berbagai layanan mulai dari konsultasi, psikotes,
+              pengembangan diri (self growth), hingga workshop. Layanan ini
+              tersedia untuk berbagai usia, baik dewasa maupun anak-anak. Pesan
+              sekarang dan dapatkan dukungan yang Anda butuhkan untuk mencapai
+              kesejahteraan mental yang lebih baik.
             </p>
             <Link to="/pesan" onClick={() => handleLinkClick()}>
               <button

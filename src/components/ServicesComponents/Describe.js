@@ -53,10 +53,13 @@ const Describe = () => {
             </div>
             <div className="sm:w-2/4 sm:ml-auto text-base md:text-lg mt-4 sm:mt-0">
               <p>
-                Jelajahi layanan yang kami tawarkan untuk mendukung kesehatan
-                mental dan emosional Anda. Dari konsultasi psikologis hingga tes
-                kecerdasan dan terapi khusus, tim psikolog kami siap membantu
-                Anda mengatasi berbagai tantangan.
+                Temukan layanan kami yang mendukung kesehatan mental dan
+                perkembangan anak. Dari Konsultasi Psikologis dan Konsultasi
+                Anak, hingga Tes Kecerdasan (IQ) dan Tes Minat Bakat. Kami juga
+                menawarkan Program Terapi Anak Berkebutuhan Khusus, Play
+                Therapy, Montessori Program, dan Psikoedukasi. Untuk orang tua
+                dan profesional, tersedia Parenting Class, Recruitment &
+                Selection, serta Sharing Class.
               </p>
             </div>
           </div>

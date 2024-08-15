@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import smile from "../../images/smile.webp";
 import pesawat from "../../images/pesawat.webp";
 import arrows from "../../images/arrows.webp";
-import about_praktik from "../../images/rounded_about.webp";
+import about_praktik from "../../images/about_edukasi_ceria.webp";
 import { Helmet } from "react-helmet";
 
 const AboutPraktik = () => {
@@ -78,22 +78,22 @@ const AboutPraktik = () => {
               <img src={smile} alt="Smile Images" className="w-1/4 md:w-auto" />
             </motion.div>
             <motion.h1
-              className="font-bold text-3xl sm:text-5xl md:mt-10 text-center sm:text-left"
+              className="font-bold text-4xl md:text-5xl md:mt-10 text-center sm:text-left lg:text-6xl"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Praktik Psikolog Edukasi Ceria
+              Edukasi Ceria
             </motion.h1>
             <motion.p
-              className="text-center sm:text-left my-3 sm:my-5"
+              className="text-center sm:text-left my-3 sm:my-5 md:w-5/6 lg:text-lg"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Praktik Psikolog Edukasi Ceria adalah sebuah praktik yang bergerak
-              di bidang psikologi. Kami menyediakan berbagai macam layanan
-              psikologi yang dapat disesuaikan dengan kebutuhan Anda.
+              Edukasi Ceria adalah sebuah praktik yang bergerak di bidang
+              psikologi. Kami menyediakan berbagai macam layanan psikologi yang
+              dapat disesuaikan dengan kebutuhan Anda.
             </motion.p>
             <motion.div
               className="flex justify-center sm:justify-start w-1/2 mt-6"

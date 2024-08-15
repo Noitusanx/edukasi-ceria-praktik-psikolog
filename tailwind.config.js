@@ -30,7 +30,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": `url(${path.resolve(
           __dirname,
-          "src/images/event_image_temp.webp"
+          "src/images/background_event.webp"
         )})`,
       },
     },

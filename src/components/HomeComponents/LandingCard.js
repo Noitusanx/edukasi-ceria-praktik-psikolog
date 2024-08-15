@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import LandingImage from "../../images/file_edits.webp";
+import LandingImage from "../../images/landingimage.webp";
 import { Link } from "react-router-dom";
 import { useLink } from "../LinkContext";
 import { Helmet } from "react-helmet";

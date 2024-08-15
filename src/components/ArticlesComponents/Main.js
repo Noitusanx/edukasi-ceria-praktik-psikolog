@@ -65,7 +65,7 @@ const Main = () => {
                   <h1 className="font-bold xl:text-[2.5rem] lg:text-3xl text-2xl my-3 sm:my-6">
                     {articles[0].title}
                   </h1>
-                  <p className="lg:text-lg xl:text-xl text-base line-clamp-6">
+                  <p className="lg:text-lg text-base line-clamp-6">
                     {articles[0].text}
                   </p>
                 </div>
