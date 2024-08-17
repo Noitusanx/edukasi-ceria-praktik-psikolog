@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
 import Articles from "./pages/Articles";
 import Article from "./pages/Article";
-import Booking from "./pages/Booking";
 import Service from "./pages/Service";
 import Events from "./pages/Events";
 import Loading from "./components/Loading";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
+import Booking from "./pages/Booking";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
 
 const Main = () => {
   const [isLoading, setIsLoading] = useState(true);
