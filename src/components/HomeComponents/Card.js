@@ -40,7 +40,7 @@ const Card = () => {
           content="Edukasi Ceria menawarkan layanan psikologi, termasuk konsultasi, terapi, dan pelatihan untuk anak-anak dan dewasa. Dapatkan bantuan profesional di sini."
         />
       </Helmet>
-      <div className="bg-darkgreen py-16 border-[1px] border-black slider-container relative">
+      <div className="bg-darkgreen py-16 border-y-[1px] border-black slider-container relative">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={20}
