@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <div className="bg-primary py-8 relative border-black border-t-[1px]">
-      <div className="container mx-auto w-4/5 border-b-[#D9D6D6] border-[1px]">
+      <div className="container mx-auto w-4/5 border-b-[1px] border-[#D9D6D6]">
         <div className="flex flex-col sm:flex-row justify-between relative">
           <div className="w-40 mx-auto sm:mx-0">
             <img src={Logo} alt="Logo" className="mx-auto md:mx-0" />
@@ -83,10 +83,10 @@ const Footer = () => {
           <div className="flex sm:block justify-center sm:justify-end mt-4 sm:mt-0 relative ">
             <button
               type="button"
-              className="p-4 rounded-full bg-orange absolute top-[-170px] right-[10px] sm:relative sm:top-0 sm:right-0 border-[1px] border-black hover:bg-[#FFC36C] transition duration-300"
+              className="md:p-4 p-3 rounded-full bg-orange absolute top-[-170px] right-[10px] sm:relative sm:top-0 sm:right-0 border-[1px] border-black hover:bg-[#FFC36C] transition duration-300"
               onClick={() => scrollTop()}
             >
-              <img src={arrow} alt="Arrow" />
+              <img src={arrow} alt="Arrow" className="w-6 xs:w-full" />
             </button>
           </div>
         </div>
