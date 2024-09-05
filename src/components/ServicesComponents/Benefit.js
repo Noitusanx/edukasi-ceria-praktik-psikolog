@@ -53,7 +53,7 @@ const Benefit = () => {
       <div className="bg-darkgreen border-t-[1px] border-black p-6 md:p-12">
         <section className="w-11/12 sm:w-4/5 mx-auto">
           <motion.div
-            className="flex flex-col xl:flex-row bg-[#A7E7D7] p-6 sm:p-10 border-black border-[1px] rounded-xl"
+            className="flex flex-col lg:flex-row bg-[#A7E7D7] p-6 sm:p-10 border-black border-[1px] rounded-xl"
             ref={setRef}
             initial="hidden"
             animate={controls}
@@ -62,7 +62,7 @@ const Benefit = () => {
             <img
               src={service.benefit_image}
               alt="Gambar manfaat layanan di Edukasi Ceria"
-              className="rounded-2xl mb-4 mx-auto w-full xs:w-3/5 md:w-1/2 lg:w-2/5 border-[1px] border-gray-400 xl:mr-6 h-full xl:my-auto"
+              className="rounded-2xl mb-4 mx-auto w-full xs:w-3/5 md:w-1/2 lg:w-2/5 border-[1px] border-gray-400 xl:mr-6 h-full lg:my-auto"
             />
             <div className="flex flex-col">
               <h1 className="font-bold text-2xl sm:text-3xl xl:text-4xl text-center">

@@ -1,21 +1,21 @@
-import artikelImage from "../images/artikel_image.webp";
+import talkPsikolog from "../images/talkPsikolog.webp";
 import konsultasiImage from "../images/konsultasi.webp";
 import childrenschoolImage from "../images/childrenschools.webp";
 import minatBakatImage from "../images/minatbakat.webp";
 import deteksiMasalahAkademikImage from "../images/deteksiakademik.webp";
-import tumbuhKembangImage from "../images/tumbuhkembangs.webp";
-import tesKecerdasanImage from "../images/kecerdasans.webp";
+import tumbuhKembangImage from "../images/tumbuhkembang.webp";
+import tesKecerdasanImage from "../images/kecerdasan.webp";
 import recruitmentImage from "../images/rectruitmentimage.webp";
-import psikoedukasiImage from "../images/psikoedu.webp";
+import psikoedukasiImage from "../images/psikoedukasi.webp";
 import konsultasianakimage from "../images/konsultasi_anak_img.webp";
-import parentingImage from "../images/parenting-class2.webp";
-import sharingClassImage from "../images/sharingclasss.webp";
+import parentingImage from "../images/parentingclass.webp";
+import sharingClassImage from "../images/sharingclass.webp";
 import iqtestImage from "../images/iqtes.webp";
-import childConsultation from "../images/child-consultation.webp";
+import childConsultation from "../images/childconsultation.webp";
 import montessoriImage from "../images/montessori.webp";
 import sensorikImage from "../images/sensorik.webp";
-import tesKepribadianImage from "../images/kepribadian.webp";
-import tesMinatBakatImage from "../images/minat-bakats.webp";
+import tesKepribadianImage from "../images/tesKepribadianImage.webp";
+import tesMinatBakatImage from "../images/tesMinatBakatImage.webp";
 import interviewImage from "../images/interview.webp";
 
 const layanans = [
@@ -122,7 +122,7 @@ const layanans = [
         bgColor: "#FFA2C9",
       },
     ],
-    benefit_image: artikelImage,
+    benefit_image: talkPsikolog,
     benefits: [
       {
         title: "Pendekatan Personal",
@@ -186,7 +186,7 @@ const layanans = [
         title: "Kemampuan Performansi",
         description:
           "Mengukur kemampuan anak dalam menyelesaikan tugas-tugas yang memerlukan keterampilan praktis dan pemecahan masalah secara visual dan motorik.",
-        image: artikelImage,
+        image: talkPsikolog,
         bgColor: "#7FDCF9",
       },
     ],
@@ -240,7 +240,7 @@ const layanans = [
         title: "Penilaian Kognitif",
         description:
           "Evaluasi kemampuan berpikir, pemecahan masalah, dan keterampilan belajar dasar.",
-        image: artikelImage,
+        image: talkPsikolog,
         bgColor: "#9BE2D0",
       },
       {
@@ -268,7 +268,7 @@ const layanans = [
         title: "Kemandirian",
         description:
           "Menilai kemampuan anak dalam melakukan tugas-tugas sehari-hari secara mandiri, seperti berpakaian dan merapikan barang.",
-        image: tesKepribadianImage,
+        image: tesMinatBakatImage,
         bgColor: "#ECECEC",
       },
       {
@@ -344,7 +344,7 @@ const layanans = [
         title: "Pemetaan Potensi",
         description:
           "Menggabungkan hasil dari penilaian minat dan bakat untuk memberikan gambaran menyeluruh tentang potensi anak.",
-        image: artikelImage,
+        image: talkPsikolog,
         bgColor: "#9BE2D0",
       },
     ],
@@ -412,7 +412,7 @@ const layanans = [
         title: "Evaluasi Preferensi Sosial",
         description:
           "Menilai kecenderungan sosial seseorang, seperti introversi dan ekstroversi, serta preferensi interaksi dengan orang lain.",
-        image: artikelImage,
+        image: talkPsikolog,
         bgColor: "#7FDCF9",
       },
     ],
@@ -526,7 +526,7 @@ const layanans = [
     subtitle: "Terapi untuk anak dengan kebutuhan khusus",
     description:
       "Program terapi ini dirancang khusus untuk anak-anak dengan kebutuhan khusus, seperti autism, ADHD, dan gangguan perkembangan lainnya. Terapi ini membantu anak mencapai potensi maksimal mereka melalui pendekatan yang individual.",
-    image: artikelImage,
+    image: talkPsikolog,
     bgColor: "#FFA2C9",
     activity_description:
       "Program ini melibatkan berbagai terapi dan penilaian untuk mendukung perkembangan anak.",
@@ -549,7 +549,7 @@ const layanans = [
         title: "Speech and Language Therapy",
         description:
           "Terapi yang membantu anak dalam mengembangkan keterampilan komunikasi, baik verbal maupun nonverbal, untuk meningkatkan interaksi sosial dan kemampuan berbahasa.",
-        image: artikelImage,
+        image: talkPsikolog,
         bgColor: "#7FDCF9",
       },
     ],
@@ -604,7 +604,7 @@ const layanans = [
         title: "Permainan Simbolis",
         description:
           "Menggunakan permainan simbolis untuk membantu anak mengekspresikan emosi dan mengatasi masalah emosional secara kreatif.",
-        image: artikelImage,
+        image: talkPsikolog,
         bgColor: "#7FDCF9",
       },
       {
@@ -687,7 +687,7 @@ const layanans = [
         title: "Pembelajaran Terstruktur",
         description:
           "Penggunaan bahan ajar Montessori yang dirancang untuk mendukung pembelajaran matematika, bahasa, dan keterampilan kehidupan sehari-hari dengan cara yang terstruktur dan menarik.",
-        image: artikelImage,
+        image: talkPsikolog,
         bgColor: "#7FDCF9",
       },
     ],
@@ -826,10 +826,10 @@ const layanans = [
         description:
           "Pelatihan untuk mendukung pengembangan karakter positif pada anak, seperti disiplin, tanggung jawab, dan empati.",
         image: tesMinatBakatImage,
-        bgColor: "#C4B0FF",
+        bgColor: "#ECECEC",
       },
     ],
-    benefit_image: artikelImage,
+    benefit_image: talkPsikolog,
     benefits: [
       {
         title: "Peningkatan Kualitas Pengasuhan",
@@ -881,7 +881,7 @@ const layanans = [
         description:
           "Evaluasi menyeluruh terhadap keterampilan dan potensi individu untuk mengidentifikasi kekuatan yang dapat ditonjolkan dalam proses seleksi.",
         image: tesMinatBakatImage,
-        bgColor: "#C4B0FF",
+        bgColor: "#ECECEC",
       },
       {
         title: "Simulasi Wawancara",
@@ -894,8 +894,8 @@ const layanans = [
         title: "Pengembangan Strategi Seleksi",
         description:
           "Pelatihan untuk menyusun strategi sukses dalam menghadapi tes, wawancara, dan proses seleksi lainnya.",
-        image: tesKepribadianImage,
-        bgColor: "#ECECEC",
+        image: iqtestImage,
+        bgColor: "#FFA2C9",
       },
     ],
     benefit_image: sharingClassImage,

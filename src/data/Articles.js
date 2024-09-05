@@ -5,11 +5,11 @@ import MasalahAkademik from "../components/ArticlesComponents/Articles/MasalahAk
 import MinatBakat from "../components/ArticlesComponents/Articles/MinatBakat";
 import TesKecerdasan from "../components/ArticlesComponents/Articles/TesKecerdasan";
 import EventSiapaTsunami from "../components/ArticlesComponents/Articles/EventSiapaTsunami";
-import artikelImage from "../images/artikel_image.webp";
+import talkPsikolog from "../images/talkPsikolog.webp";
 import minatBakatImage from "../images/minatbakat.webp";
 import deteksiMasalahAkademikImage from "../images/deteksiakademik.webp";
-import tumbuhKembangImage from "../images/tumbuhkembangs.webp";
-import tesKecerdasanImage from "../images/kecerdasans.webp";
+import tumbuhKembangImage from "../images/tumbuhkembang.webp";
+import tesKecerdasanImage from "../images/kecerdasan.webp";
 import konsultasiImage from "../images/konsultasi.webp";
 import articleTsunami from "../images/articles_tsunami.webp";
 
@@ -35,7 +35,7 @@ const Articles = [
     title: "Mengenal Program Terapi Anak Berkebutuhan Khusus",
     text: "Anak berkebutuhan khusus memerlukan perhatian dan dukungan ekstra untuk mengatasi tantangan yang mereka hadapi dalam kehidupan sehari-hari. Beberapa kondisi umum yang termasuk dalam kategori anak berkebutuhan khusus adalah autisme, ADHD (Attention Deficit Hyperactivity Disorder), disleksia, dan sindrom Down. Program terapi yang tepat dapat membantu anak-anak ini mengembangkan keterampilan yang diperlukan untuk mencapai potensi maksimal mereka.",
     date: "25 Juli 2024",
-    image: artikelImage,
+    image: talkPsikolog,
     component: BerkebutuhanKhusus,
   },
   {
